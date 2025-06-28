@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travelling Journey</title>
+   <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .section-heading-container {
+      background-color: #f2d9cf; /* Light pink */
+      padding: 50px 20px 30px;
+      text-align: center;
+    }
+
+    .section-heading {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: black;
+      font-family: 'Dancing Script', cursive;
+      margin: 0;
+    }
+
+    .travel-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 30px 10%;
+      gap: 40px;
+      background-color: #f5f5dc
+    }
+
+    .travel-text {
+      flex: 1;
+      min-width: 300px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      font-family: cursive;
+      font-style: italic;
+    }
+
+    .travel-img {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .travel-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    @media (max-width: 768px) {
+  .section-heading {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  .travel-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 5%;
+    gap: 30px;
+  }
+
+  .travel-img, .bake-text {
+    width: 100%;
+    flex: none;
+  }
+
+  .travel-text {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .travel-img img {
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+
+    
+  </style>
+</head>
+<body>
+
+  <!-- Heading with separate background -->
+  <div class="section-heading-container">
+    <h2 class="section-heading">Travelling - My path to wonder</h2>
+  </div>
+
+  <!-- Section 1: Image Left, Text Right -->
+  <div class="travel-section">
+    <div class="travel-img">
+      <img src="images/tr 1.jpeg" alt="Travelling Image 1">
+    </div>
+    <div class="travel-text">
+      <p>
+        Traveling is how I let life surprise me.<br><br> 
+        Whether it’s walking through busy city lanes or sitting quietly by a mountain sunrise, every place I visit teaches me something new — about the world and about myself. I don’t travel just to escape, but to feel more connected — to cultures, people, stories, and the small magical moments that come without warning. It teaches me how to forget my problems for a while, breathe deeper, and truly live in the present moment.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 2: Text Left, Image Right -->
+  <div class="travel-section">
+    <div class="travel-text">
+      <p>
+        Each trip makes me softer, wiser, and more grateful. I’ve learned how to get lost and still find my way, how to plan but also let go, and how beauty shows up in the simplest details — like a stranger’s kindness or a street-side chai. For me, traveling isn’t about ticking places off a list — it’s about collecting memories, perspectives, and little pieces of wonder to carry home in my heart.
+
+
+      </p>
+    </div>
+    <div class="travel-img">
+      <img src="images/tr 2.jpg" alt="Travelling Image 2">
+    </div>
+  </div>
+
+</body>
+</html>

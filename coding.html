@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coding Journey</title>
+   <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .section-heading-container {
+      background-color: #f2d9cf; /* Light pink */
+      padding: 50px 20px 30px;
+      text-align: center;
+    }
+
+    .section-heading {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: black;
+      font-family: 'Dancing Script', cursive;
+      margin: 0;
+    }
+
+    .code-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 30px 10%;
+      gap: 40px;
+      background-color: #f5f5dc
+    }
+
+    .code-text {
+      flex: 1;
+      min-width: 300px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      font-family: cursive;
+      font-style: italic;
+    }
+
+    .code-img {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .code-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .section-heading {
+      font-size: 2rem;
+      padding: 0 10px;
+    }
+
+      .code-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px 5%;
+      gap: 30px;
+    }
+
+      .code-img, .bake-text {
+      width: 100%;
+      flex: none;
+    }
+
+      .code-text {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+      .code-img img {
+      width: 90%;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+}
+
+    
+  </style>
+</head>
+<body>
+
+  <!-- Heading with separate background -->
+  <div class="section-heading-container">
+    <h2 class="section-heading">Coding and Programming- My logic and language</h2>
+  </div>
+
+  <!-- Section 1: Image Left, Text Right -->
+  <div class="code-section">
+    <div class="code-img">
+      <img src="images/code1.jpg" alt="coding Image 1">
+    </div>
+    <div class="code-text">
+      <p>
+       Coding has slowly become my creative superpower — where I build, break, learn, and rebuild. I love how a blank screen turns into something functional, beautiful, and smart with just the right logic. From styling simple web pages to solving C++ problems and writing scripts, programming helps me express myself in a different kind of language — one made of ideas, logic, and endless possibilities.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 2: Text Left, Image Right -->
+  <div class="code-section">
+    <div class="code-text">
+      <p>
+        It is not always smooth — I spend hours stuck on bugs, face errors and doubt myself more than once. But those challenges shape me. I’ve learned to stay patient, break problems down, ask better questions, and keep going until something works. Coding has taught me resilience, focus, and the joy of creating solutions. It has also helped me develop teamwork, time management, and leadership — not just through solo projects, but by collaborating, debugging, and learning with others.
+      </p>
+    </div>
+    <div class="code-img">
+      <img src="images/code2.jpg" alt="coding Image 2">
+    </div>
+  </div>
+
+</body>
+</html>
