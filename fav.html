@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Books</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #FDFAF6;
+      color: #333;
+      padding: 2rem;
+    }
+    .section-heading-container {
+      background-color: #f2d9cf; /* Light pink */
+      padding: 50px 20px 30px;
+      text-align: center;
+    }
+
+    .section-heading {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: black;
+      font-family: 'Dancing Script', cursive;
+      margin: 0;
+    }
+
+
+
+
+    h2.section-title {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #5a2a2a;
+    }
+
+    .book-section {
+      margin-bottom: 3rem;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .book-card {
+      background: #fff0f5;
+      border-radius: 15px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .book-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .book-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .book-title {
+      font-weight: 600;
+      margin-top: 0.8rem;
+    }
+
+    .book-author {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 0.3rem 0;
+    }
+
+    .book-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 8px 16px;
+      background-color: palevioletred;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    .book-link:hover {
+      background-color: #d94a7a;
+    }
+    @media (max-width: 768px) {
+  h2.section-title {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  .book-grid {
+    grid-template-columns: 1fr; /* Show 1 book per row on phones */
+    gap: 1.2rem;
+  }
+
+  .book-card {
+    padding: 1rem;
+  }
+
+  .book-card img {
+    height: 250px;
+  }
+
+  .book-title {
+    font-size: 1rem;
+  }
+
+  .book-author {
+    font-size: 0.85rem;
+  }
+
+  .book-link {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+
+  body {
+    padding: 1rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+    <!-- Heading with separate background -->
+  <div class="section-heading-container">
+    <h2 class="section-heading">My Favourite Books</h2>
+  </div>
+
+  <!-- Section: Self Help & Poetry -->
+  <div class="book-section">
+    <h2 class="section-title">Self-help & Poetry</h2>
+    <div class="book-grid">
+      <div class="book-card">
+        <img src="images/strength.jpg" alt="strength in our scars">
+        <div class="book-title">Strength In Our Scars</div>
+        <div class="book-author">Bianca Sparacino</div>
+        <a href="https://www.amazon.in/Strength-Our-Scars-Bianca-Sparacino/dp/9355439296/ref=sr_1_1_sspa?crid=924NOFSW0UTC&dib=eyJ2IjoiMSJ9.qTFV2PyPIqkgVLaQkMXulxnzDaBZ2sBmuC6E0A9WCEVUqNTCnm9zzQuRGojSAasJarKZtCV7db0mb76Z8kajDMOeogR6p_VX-6IzVpHoMZsYk1VxBx93Jxh24ZMoBDDr89AO3w2cVIvENXTOjz2mcV0o6288YoT4ish1eloBfRVD1sdyFtnuaiA2U82yOEr51qys3yjBZ8-ScclycKOJcXbJejBurH7MNKzyxsOOrrk.wSoZgysy4qfOpu14jsmNES89yBjV09zW4jssbRO-mVE&dib_tag=se&keywords=the+strength+in+our+scars&qid=1751115721&sprefix=strength+in+%2Caps%2C216&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/art of.jpg" alt="the art of letting go">
+        <div class="book-title">The Art Of Letting Go</div>
+        <div class="book-author">Bianca Sparacino</div>
+        <a href="https://www.amazon.in/The-Art-of-Letting-Go/dp/B0845YTM3L/ref=sr_1_10?crid=SMSHZSLOZV11&dib=eyJ2IjoiMSJ9.Qy1b7pJXtJkHDqADUX4L81vyrPf-kOeFz59wkYQOs933zC8VnPO_Ki0zYFAnrVFXSJjcp1jzqoqT6hzB6mP9L81fZWMfneSYtP-SuAph7B5x1qtge1uGgjo3cpsHMPc_LKbQaPSZ60-6IPVb3IyBHWOGFkrN5e5e1maHjxTHSLLsQQHkTRhom0tBccVIyWNxtktF50FFyXO1VPeEfTTGuYvRA5cgrH1Uqn_29uwphD8.Zb3jn02O9k_YeqJnBMnZAwlLosb3lWm1ETTLv7rRRug&dib_tag=se&keywords=the+art+of+letting+go&qid=1751115766&sprefix=the+art+%2Caps%2C302&sr=8-10" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/secret.jpg" alt="the secret">
+        <div class="book-title">The Secret</div>
+        <div class="book-author">Rhonda Bryne</div>
+        <a href="https://www.amazon.in/Secret-Rhonda-Byrne/dp/1582701709/ref=pd_rhf_se_s_ci_mcx_mr_hp_d_d_sccl_2_2/259-9137972-5058758?pd_rd_w=VKlGF&content-id=amzn1.sym.27b2fb5a-5c6b-4aba-8a0c-71fb41193d86:amzn1.symc.1042562f-235b-4049-91eb-05d433a5d976&pf_rd_p=27b2fb5a-5c6b-4aba-8a0c-71fb41193d86&pf_rd_r=968SWENX0HREW9K0T2KD&pd_rd_wg=S8kb8&pd_rd_r=af7f5243-694c-44dc-8e74-bddf7becc55d&pd_rd_i=1582701709&psc=1" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/images.jpg" alt="untamed">
+        <div class="book-title">Untamed</div>
+        <div class="book-author">Glennon Doyle</div>
+        <a href="https://www.amazon.in/Untamed-Stop-pleasing-start-living/dp/1785043358/ref=sr_1_2?crid=Z9EPYOTS5TB0&dib=eyJ2IjoiMSJ9.6eMpVA6WtUSao4nqzZ9_5xKfU3-rg5GK_HsCcSJBr_2lCuTFQd1DB6ODu8daFxMLFBfpby8y1xw4oVJ-0FB8EoHFuls9P9MSWU2Oo2Dqbw4hFyZmFLUQGhACRSy-rrX3atKTHgomfgJ7xxufosSepVit9GOnGStdotMkj1FrIjvJT5OB4YO4kNNf3qK-E4KHhERODfQFlefyBvACQoGBzLyq0TMMCejaeSHynFKeX38.gTWQoG7_gAPnfjAAZnZAtNCUhhYAst7EJPmO4tr7uUg&dib_tag=se&keywords=untamed&qid=1751115846&s=books&sprefix=untam%2Cstripbooks%2C324&sr=1-2" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/81nZQGjg+wL.jpg" alt="you can heal your life">
+        <div class="book-title">You Can Heal Your Life</div>
+        <div class="book-author">Louise Hay</div>
+        <a href="https://www.amazon.in/You-Can-Heal-Your-Life/dp/8190565583/ref=sr_1_2?crid=15Q4ZQOIPV2CP&dib=eyJ2IjoiMSJ9.aY2FmnLGWBB8OsvEVFxBvykY6aMbCNowzteYB8N_LGUsvUbE3x2iu6EAppgGnINlPl1M22OmgAndWz0c3ufbhv_2xZ1kU1R3Rgos0TnTvQj9DEZWmo3zdAywDj5uoi-GkZlrTd2laIUCRHfmsJdTvC-Ky4PubUkFGe8eTBel5ihKjwyhUS0S3jDPGjEcO0cTv_ENZ4scFEfc79V221Q9UKW0yvDXxBpiErtwcUWsFCs.39lsu5tFttHgxng4Q4Yb7Z0wQLCARUYLpudK5cF-hfk&dib_tag=se&keywords=you+can+heal+your+life+by+louise+l.+hay&nsdOptOutParam=true&qid=1751115892&s=books&sprefix=you+can+heal+%2Cstripbooks%2C412&sr=1-2" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/come home.jpg" alt="come home to yourself">
+        <div class="book-title">Come Home To Yourself</div>
+        <div class="book-author">Deja Ray</div>
+        <a href="https://www.amazon.in/Come-Home-Yourself-D%C3%A9j%C3%A0-Rae-ebook/dp/B0BLTFN4TT/ref=sr_1_2?crid=3MIMQ2WDDUQ51&dib=eyJ2IjoiMSJ9.ElDGcOQfNZzvL-9Xsqjsie4dOMLek2GlQTAWt-s79OimXwtjXMogcCWmyCCbLQr7WwbnEajjS9wNb1equtgVrVRxeMBhC0-4jQLMZn-G9Dz3iAVtkDm7K6cMtEqOR9ldm1RC-i5RHiAebvGtFFicuvHjUznxvAY57k6999BzosDGFhV_NHWvVlP8cE2UuQyDsaodwy5ZwXidRjgveSFx9cjNawT7VObRCH0gWPYHES4.GtKIEeWlDZp4jal8eoS2Mylk5lH8kvjSU2KwoEmPmKk&dib_tag=se&keywords=come+home+to+yourself&qid=1751115919&sprefix=come+home+%2Caps%2C254&sr=8-2" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/buy.jpg" alt="buy yourself the damn flowers">
+        <div class="book-title">Buy Yourself The Damn Flowers</div>
+        <div class="book-author">Tam Kaur</div>
+        <a href="https://www.amazon.in/Buy-Yourself-Damn-Flowers-Kaur/dp/1785122185/ref=sr_1_1?crid=2T12RS4IX480L&dib=eyJ2IjoiMSJ9.dNFQyNc-gWrbBakmzXcBwy9R80eHbfZKhCNNglDcl3jcrrwQiBJzlZ5Opkgxa-lJUVd_SzmXho-siATEpD0_oF70T4AWOOchY5BCljgZw0is8YSnADmhQVVi7l6RfwTKztwud0hqnoghcsTrovetuMWA6CeW7MPpe3KYars2ymvReHsf1IpQwYZfAPtd6X-Iek_4aOrFaGxWtjg1uDT9y1eGG5hUmf53Kdx0lXITL-s.6yIX5QisF6v4aptUtMkMdSNcQtDcXVcDM35T9P6aUVA&dib_tag=se&keywords=buy+yourself+the+damn+flowers+tam+kaur&qid=1751115945&sprefix=buy+yourself%2Caps%2C224&sr=8-1" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: Business & Finance -->
+  <div class="book-section">
+    <h2 class="section-title">Business & Finance</h2>
+    <div class="book-grid">
+      <!-- Add books here -->
+       <div class="book-card">
+        <img src="images/71sA27JIixL._UF1000,1000_QL80_.jpg" alt="the most powerful woman in the room is you">
+        <div class="book-title">The Most Powerful Woman In The Room Is You</div>
+        <div class="book-author">Lydia Fenet</div>
+        <a href="https://www.amazon.in/Most-Powerful-Woman-Room-You-ebook/dp/B07GNTSTZ8/ref=sr_1_1?crid=3CSWIHH9O2OTA&dib=eyJ2IjoiMSJ9.642EI7oeqq4LpApytX3CQ1_8Zd7yaME34kNdeW8uuHrWLUqu-3Yq2uoLaQVF5Bh3-Cm1ASVcxxPvrzC4gRMPLWxLm6DLnOfuhEL6ACqON3Ps2V8SQNfN_NklXRv-AshmK5hzD6J-HhCqxjkGTdmFLkx_gIUs0j1fypDiNRuWRsstGXYqbPwyyNA3x4i3pHSh.q_U1GLTBxSaM6vCpRzcNZWOtxeCw9le0ikaoMaB5MJE&dib_tag=se&keywords=the+most+powerful+women+in+the+room+is+you&nsdOptOutParam=true&qid=1751115981&sprefix=the+most+power%2Caps%2C406&sr=8-1" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/almanac.jpg" alt="almanac of naval ravikant">
+        <div class="book-title">Almanac Of Naval Ravikant</div>
+        <div class="book-author">Naval Ravikant</div>
+        <a href="https://www.amazon.in/Almanack-Naval-Ravikant-Wealth-Happiness/dp/9354893899/ref=sr_1_1_sspa?crid=31NTX2P5S5XDT&dib=eyJ2IjoiMSJ9.FRT3MwScm1ol3N5f7x8gg_kmj1W557rYBLE5Fe_X9jhb0vWbobcJA-TynWWvwK9-RMJBCidSXfVFkgdCHQYV3XBRQAwU0XF8qm8xse9_cWOghE27KvZxfh_qysANgVwdmgx4mbMRFgD1UfYdQcSMdUJH3KsykwgM99boWW67RDumSDPBb09T-nSkd3eB8fUUk387qPg9y1Od8lofpJ6764OrToqrFDXdx2849knf_T0.zOthj0PP9aJ3VIG8n-0vUK--8aVW4D-qozTmSfr5-Jo&dib_tag=se&keywords=almanac+of+naval+ravikant&qid=1751116008&sprefix=almanac+%2Caps%2C257&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/Zero_to_One.jpg" alt="zero to one">
+        <div class="book-title">Zero To One</div>
+        <div class="book-author">Peter Thiel</div>
+        <a href="https://www.amazon.in/ZERO-English-Paperback-your-Read/dp/B0FF3N77SR/ref=sr_1_1_sspa?crid=9QA0H0726AS8&dib=eyJ2IjoiMSJ9.JepMXoWuhzYTz1gxy1cPtCvhxmd-SEko94uOyvrHXJexI3xQi1YgmKCLwoXzfg7Ouah-TOJAVWxLTgeMKFHUu1OC_OjpW2Sdse74-anMIKn0T3XRydWWNbgH9v7vpjjsBxkmR7PDPkaJ5-SFNqP_8XoFRNwq1jXdzkJPJ_TdYMThrojzH8aTVeJV_HhMQdOht8beFBIijsgwBicAgTCBJupvfoAdRiX5oLznBYWefpA.XqzCaRice_C-CcllHL7dkhief4lr8MNtYzOr9izkUxc&dib_tag=se&keywords=zero+to+one&qid=1751116032&sprefix=zero+to+%2Caps%2C444&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/diary.jpg" alt="the diary of a ceo">
+        <div class="book-title">The Diary Of A Ceo</div>
+        <div class="book-author">Steven Barlett</div>
+        <a href="https://www.amazon.in/Diary-CEO-Laws-Business-Life/dp/1529146518/ref=sr_1_2?crid=1CM4S0T7JZEEN&dib=eyJ2IjoiMSJ9.MXuDjhrkB6A7KfSsqXOfSpLRBqbUPf6a3klaAGO1R7nGO2QTPGtVV3-YaKf3ifCDV9YsR_6W2ThYEeIIIFPUALdi1W7nkrMbpfv6XuCgbVJXSNVZid4hhHSBFfdoJXm5uTOswrz1BsufGgjiWL_9gEgePUQp2Alc_fgcHGHkJNfyWaAsomisWMpW3Rr2PZE3Z_WpuBtZO-VwKdS4tiErzSoF3wRsT26xQZYRz9EGFGc.irourzU-w381hxrj31Gk4oVlCf6CtED0Tz_gBrd4WU0&dib_tag=se&keywords=diary+of+ceo&qid=1751116054&sprefix=diary+of+c%2Caps%2C496&sr=8-2" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/mba.jpg" alt="the personal mba">
+        <div class="book-title">The Personal MBA</div>
+        <div class="book-author">Josh Kaufman</div>
+        <a href="https://www.amazon.in/PERSONAL-English-Paperback-your-Read/dp/B0FF3QMQ38/ref=sr_1_1_sspa?crid=3Q87OA9RWI4RR&dib=eyJ2IjoiMSJ9.dSu5xqiCfsnkE2HVaDEV_KkYoVhl3vF1-Zp3EE32qcHdaajM7bL2N9-Cco5JC4r5E0tOg4H8krpWLfpa9iYuGfrGcB6LSWL6jNz8T7JoG4nsZx8rYHs6vZx-Hxx-LJKz7JQJeNF1I19N6-ahDLIL-AmQnMC7Ee7twnTcs6MRMsimNm9cekMTTxdj1Gj7NY0fv_cU5e4ws4Kwy6eQQfqJ1D8kUnGCwzaCnQDLzkKjn-k.R5tz1M_ZRDC6xLo-W0bETAfyB9jb3KYocRDnJGeQDNQ&dib_tag=se&keywords=the+personal+mba&qid=1751116076&sprefix=the+personal%2Caps%2C440&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: Thriller -->
+  <div class="book-section">
+    <h2 class="section-title">Thriller</h2>
+    <div class="book-grid">
+      <!-- Add books here -->
+       <div class="book-card">
+        <img src="images/silent.jpg" alt="the silent patient">
+        <div class="book-title">The Silent Patient</div>
+        <div class="book-author">Alex Michaelides</div>
+        <a href="https://www.amazon.in/Silent-Patient-Gripping-Thriller-Michaelides/dp/B0FFTDKQM5/ref=sr_1_1_sspa?crid=3H8HIF9P4NHJR&dib=eyJ2IjoiMSJ9.yQ3YyshFnOnBMZG-pZgPrqMPsT_-c6iQAyd6FJOkqXSZDecBKar5T7V2XHA8OXgeX__U1JB8m8h-nG0Rq0EgE2Z0WeB-R5LM1oGGLv7XN9Pqv0Eubd_3XEZcV1TrmJ4pdNAIqaqygAHB_DuruBQbcqkkN4a_CZr0kOtKx-e6O77Pv7aGRygwLUZRS7y1B6YzB929svR0P_wiASHLm-Lva8ehnh0osOFcgNeB2CzjwWg.hkV4VqyPeh_-TLKy8OMc8kt0o7KsoGfsZUr2fJpXOLA&dib_tag=se&keywords=the+silent+patient&qid=1751116099&sprefix=the+silent+pa%2Caps%2C376&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/maidens.jpg" alt="the maidens">
+        <div class="book-title">The Maidens</div>
+        <div class="book-author">Alex Michaelides</div>
+        <a href="https://www.amazon.in/THE-MAIDENS/dp/1409181685/ref=sr_1_1?crid=2P9S401BF3HD4&dib=eyJ2IjoiMSJ9.s7VLB5AFVKGmRraWn1LTambAGas0MxMkpmGAy7IfqnnkwOtYc-DWA75euzG_MfZHTr09KdO_bRAaL-apqbY57tXBRrzX5Ot_6XL7L72PZj1XifxGIcnGjbyUy4zvxGYHN0EfFKUTWtXGgUYYggtk9fhrBNjLqTWn8kcsMdMrYwharKRPOX7U-v-JFKGdMhxzQhb0Q89o4LyEN__zopNmOC7YY93aATRiWQy6yx2pDXo.YZxVagG2dT2LnzZSeUO4qOwK3BWNw47OHxbO0ccmFZI&dib_tag=se&keywords=the+maidens&nsdOptOutParam=true&qid=1751116119&sprefix=the+maidens%2Caps%2C257&sr=8-1" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/housemaid.jpg" alt="housemaid">
+        <div class="book-title">Housemaid</div>
+        <div class="book-author">Freida McFadden</div>
+        <a href="https://www.amazon.in/Housemaid-Watching-Special-Paperback/dp/B0DX25SP54/ref=sr_1_1_sspa?crid=3K830PFJSX321&dib=eyJ2IjoiMSJ9.dzPSQvWV5OOUDbbMQgPi-qWyZMCO8C3et9aQORyQ0e3zVqxWh06u_eQUotxYIELIwr3gSS6lSmzJmnN42ttTtusSYwAPAPIA5iCZ-yov7lgR0TCavrftJm6yluQFCuhhmRjpZXBJEAiHgn9hgyAkX7YtLAf7-p1HOw5tmhQ0buA_0ucm_L-4_l94-MrKQImVlADrPVjGU5ZZknhzqzCw2peyM8XTU10OETrrco4oFhs.v7x7cYl9Elg7V2zQaaQACHe0mdFJH7qNozRjagixAmA&dib_tag=se&keywords=the+housemaid&nsdOptOutParam=true&qid=1751116142&sprefix=the+housemaid%2Caps%2C253&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/murder.jpg" alt="good girls guide to murder">
+        <div class="book-title">Good Girl's Guide To Murder</div>
+        <div class="book-author">Holy Jackson</div>
+        <a href="https://www.amazon.in/Good-Girls-Guide-Murder/dp/1405293187/ref=sr_1_1_sspa?crid=1JJ8D4OJ4YK3D&dib=eyJ2IjoiMSJ9.krreONaqG25eaWPMbVxmlqy-ZwkSJktpEwHWW2jWID9zA02hD2FrfO9lI5eX4cEwY-2RgWpGPcqsWcThM-Rpu_ZR65zGayQM6FnvNCdlNm32ux0J5t6Ii8K9Ghizu6T8OfuPxT06WCcpubL9toSCSoMyv0rigTdCIWIMsc62-Gc7tzYv1xIMEmt27PgJz_xEvVhIqEJqcrhE1tNjCZ61n0nfudFtCceHNp_k0oFw0Ok.SzirS8HdcdqBsD8xe6Th4WlLdPi49Myi23fnnmLiQF0&dib_tag=se&keywords=good+girls+guide+to+murder&qid=1751116167&sprefix=good+gi%2Caps%2C446&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/good girl bad.jpg" alt="good girl, bad blood">
+        <div class="book-title">Good Girl, Bad Blood</div>
+        <div class="book-author">Holy Jackson</div>
+        <a href="https://www.amazon.in/Good-Girl-Bad-Blood-Murder/dp/0008782113/ref=sr_1_2_sspa?crid=1JJ8D4OJ4YK3D&dib=eyJ2IjoiMSJ9.krreONaqG25eaWPMbVxmlqy-ZwkSJktpEwHWW2jWID9zA02hD2FrfO9lI5eX4cEwY-2RgWpGPcqsWcThM-Rpu_ZR65zGayQM6FnvNCdlNm32ux0J5t6Ii8K9Ghizu6T8OfuPxT06WCcpubL9toSCSoMyv0rigTdCIWIMsc62-Gc7tzYv1xIMEmt27PgJz_xEvVhIqEJqcrhE1tNjCZ61n0nfudFtCceHNp_k0oFw0Ok.SzirS8HdcdqBsD8xe6Th4WlLdPi49Myi23fnnmLiQF0&dib_tag=se&keywords=good+girls+guide+to+murder&qid=1751116167&sprefix=good+gi%2Caps%2C446&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: Love Stories -->
+  <div class="book-section">
+    <h2 class="section-title">Love Stories</h2>
+    <div class="book-grid">
+      <!-- Add books here -->
+       <div class="book-card">
+        <img src="images/voice.jpg" alt="the archer's voice">
+        <div class="book-title">The Archer's Voice</div>
+        <div class="book-author">Mia Sheridan</div>
+        <a href="https://www.amazon.in/Archers-Voice-Mia-Sheridan/dp/1538727358/ref=sr_1_1?crid=B9B9U2QSAVUT&dib=eyJ2IjoiMSJ9.u9XyJ_8yaMzBt6zXTl4hySP1ZYASnaWBnjb7W7jQ-7JzEk9I01Bdii_IHMV_pR81rrqoDgLt2q8JsmvPeBXMJcsDRg1g2f8c-rUFi-j3qd_RUVyMgZIlPFwTZIgJph48TO-Q4Qs5Ca7QM3eVDTpRfggoPd7yWkJ1z7LWTvEYFtBkWVtMineTCOM3zywvP8Jl-GNnaVkMfoKDV8hDnZmoFMVO2iQG4-zosM61GdG-D7k.txW42UV3B_cOX49_yRHlHNhlL8VmhgO7cJ0l_cjKP7g&dib_tag=se&keywords=the+archers+voice&qid=1751116209&sprefix=the+archers+voic%2Caps%2C439&sr=8-1" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/this thing.jpg" alt="this thing called love">
+        <div class="book-title">This Thing Called Love</div>
+        <div class="book-author">Deblina Bhattacharya</div>
+        <a href="https://www.amazon.in/This-Thing-Called-Deblina-bhattacharyya/dp/8198266151/ref=sr_1_1?crid=257VM4TVHE93J&dib=eyJ2IjoiMSJ9.ROnTpa3nNSsejFr6ReIs3gAoPn92Y5tGEZn_Dova9Fena2P5LxRoBh31hEAqITSetNWJfKT4MDCKnfXg29NuhSNe80v7OXxx4q_BMnlvPyC1fwvCQ85PtDEc__wK3WBF8EOoO3mlaXhQrRZXiC2VRA.z4-6fW8Czf0VZvu5Qgb-vSXuLjRfPRZRbGv7-DEOV24&dib_tag=se&keywords=this+thing+called+love+by+deblina&qid=1751116233&sprefix=this+thing+%2Caps%2C280&sr=8-1" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/twisted games.jpg" alt="twisted games">
+        <div class="book-title">Twisted Games</div>
+        <div class="book-author">Ana Huang</div>
+        <a href="https://www.amazon.in/Twisted-Game-Part-Famous-Lovers/dp/B0FF3QWYKK/ref=sr_1_2_sspa?crid=3NHF7HPWHBPLV&dib=eyJ2IjoiMSJ9.zgrfyQelqZlEODysK3SvXALEaiWvDaqp9mayxnVbuNOipD_RcVLxwlDK1CR6Upxs9nSfDfMxgmBad5dt2su6DCo23B2vUfx7nDd_uc2MbMLLRwDKsHwEK2OYXhUdb2bP-Q3QfI64SnwnyC3vsjzlmCDsd641TxUBHQP2yScWhJaPjbzqowUr5ACWaWI0IjznijFvr-UpiK-EAYrxFumyolyhawO0Bs9ub8Ub_PwgqD0.5LEiJwEFd5fWucc6FFaW9yWHeS0SreswNjQdlki53y8&dib_tag=se&keywords=twisted+games&nsdOptOutParam=true&qid=1751116278&sprefix=twisted+gam%2Caps%2C323&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/twisted love 1.jpg" alt="twisted love">
+        <div class="book-title">Twisted Love</div>
+        <div class="book-author">Ana Huang</div>
+        <a href="https://www.amazon.in/Twisted-Love-Part-Famous-Lovers/dp/B0FF3QWG7V/ref=sr_1_1_sspa?crid=2Z7WTHAVI7D27&dib=eyJ2IjoiMSJ9.I4hdFJ73hFWQhghzCubh5PF_qQ0-PfjUk_3Uz8_Arq2I-lsQAeenb9Todp9gySb9C8Gbvx-_CluYr_-k3YiFkRLqpJeElhkH-1_RSYKsV1oMN69CqAYdVwW8CoVIkzer9qu1-p_CLFtE_AIvbdy_S7IfhLelAgdKIgB8k7wX93xu9sZYFS-77so1uTMmRReFN48dOKY63s8ck5X04WhbKv30REbKRfG5IL-cYYHbyy0.VrkgArcX1xTbPORSMlsHgUehshkPLGK_oT3E2DsBXaU&dib_tag=se&keywords=twisted+love&qid=1751116255&sprefix=twisted%2Caps%2C251&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+      <div class="book-card">
+        <img src="images/love is a lie.jpg" alt="love is a beautiful lie">
+        <div class="book-title">Love Is A Beautiful Lie</div>
+        <div class="book-author">Suriya B.</div>
+        <a href="https://www.amazon.in/LOVE-BEAUTIFUL-LIE-Suriya-B/dp/B0D9YPCGRS/ref=sr_1_2?crid=3G0SO6UHBRQYY&dib=eyJ2IjoiMSJ9.GQm3RjwkRSW3Z5r7ckDMcP3Bn0Wfxv-ZE7TvsXIpX4WQLl6iF4E9H02SolpZwRM1YPtCR4LR9Ueyu9ZNfT8WaYZYKY-W4PoJPkZneUI-Zi_PQ2_qAPcu1yObFSUbti_Ydavb7qM9-mAYURY30RSDWMF7Mqmy1Nk4ZfaH5oI9XJtKHdJnqIua5T-L7K-Eme5Bgy7yZQlN-FV02WQa_Fjm7pZWrQWKnU5HtoCqnAQ9QTg.89E_i9o15f7fhqOecee1bojeTGUhmmL8bx-S28Ld1AU&dib_tag=se&keywords=love+is+a+lie&qid=1751116304&sprefix=love+is+a+li%2Caps%2C333&sr=8-2" target="_blank" class="book-link">Buy on Amazon</a>
+      </div>
+    
+    </div>
+  </div>
+
+</body>
+</html>
