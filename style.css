@@ -1,0 +1,295 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background-color: #FDFAF6;
+}
+
+/* Layout Container */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Section */
+.top-section {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2d9cf;
+  background-image: url('images/Instagram\ highlight\ cover.jpg'); /* your image path */
+  background-size:contain;      /* ensures it covers the section */
+  background-position: center; /* centers the image */
+  background-repeat:repeat-x;
+  padding: 3rem 3rem;
+  color: white; /* Optional: if image is dark, use light text */
+
+}
+
+.top-section h1 {
+  font-size: 4rem;
+  margin-bottom: 0.3rem;
+  font-style: normal;
+  color: black;
+}
+
+.top-section p {
+  font-size: 1.8rem;
+  font-family: 'Dancing Script', cursive;
+  color: black;
+  margin-top: 0.4rem;
+}
+
+/* Bottom Section */
+.bottom-section {
+  height: 65vh;
+  padding: 2rem;
+  background-color: #f5f5dc;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: pink;
+  text-shadow: 0 0 8px pink, 0 0 12px pink;
+}
+
+/* About Section */
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.9;
+  font-family:cursive;
+  font-style:oblique;
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem; /* Gap between heading and paragraph */
+}
+
+/* Photo */
+.about-photo {
+  flex: 1;
+  text-align:center;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.about-photo img:hover{
+  color: palevioletred;
+  text-shadow: 0 0 8px palevioletred, 0 0 12px palevioletred;
+}
+
+.about-photo img {
+  max-width: 400px;
+  border-radius: 25%;
+  border: 4px solid pink;
+}
+
+/* Contact Icons */
+.contact-icons {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.contact-icons a {
+  margin: 0 15px;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.contact-icons a:hover {
+  color: pink;
+  transform: scale(1.2);
+}
+
+/* Global Fade-in Animation */
+body {
+  animation: fadeInPage 1s ease-in;
+}
+
+/* Top Section Slide-Up */
+.top-section {
+  animation: slideUp 1.2s ease-out;
+}
+
+/* Nav Links Animation */
+.nav-links a {
+  opacity: 0;
+  animation: fadeInLink 1s ease forwards;
+  animation-delay: 1.2s;
+}
+
+.nav-links a:nth-child(2) { animation-delay: 1.4s; }
+.nav-links a:nth-child(3) { animation-delay: 1.6s; }
+.nav-links a:nth-child(4) { animation-delay: 1.8s; }
+.nav-links a:nth-child(5) { animation-delay: 2s; }
+
+/* About Text Animation */
+.about-text {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeSlideLeft 1.5s ease forwards;
+  animation-delay: 2.2s;
+}
+
+/* About Photo Animation */
+.about-photo {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeSlideRight 1.5s ease forwards;
+  animation-delay: 2.4s;
+}
+
+/* Contact Icons */
+.contact-icons {
+  opacity: 0;
+  animation: fadeInContact 1.2s ease forwards;
+  animation-delay: 2.8s;
+}
+
+/* Keyframes */
+@keyframes fadeInPage {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInLink {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlideLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeSlideRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInContact {
+  to { opacity: 1; }
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff0f5; /* Light pink */
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 999;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+}
+
+/* Show content only on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+  color: #333;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  /*transition: background 0.2s ease;*/
+}
+
+.dropdown-content a:hover {
+  background-color: #ffe4ec;
+  color: palevioletred;
+}
+
+/* Dropdown Container */
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #fff0f5; /* Light pink */
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 999;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+}
+
+/* Show content only on hover */
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+}
+
+/* Dropdown Links */
+.dropdown-content1 a {
+  color: #333;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  /*transition: background 0.2s ease;*/
+}
+
+.dropdown-content1 a:hover {
+  background-color: #ffe4ec;
+  color: palevioletred;
+}
+
+

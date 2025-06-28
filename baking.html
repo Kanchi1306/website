@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baking Journey</title>
+   <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .section-heading-container {
+      background-color: #f2d9cf; /* Light pink */
+      padding: 50px 20px 30px;
+      text-align: center;
+    }
+
+    .section-heading {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: black;
+      font-family: 'Dancing Script', cursive;
+      margin: 0;
+    }
+
+    .bake-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 30px 10%;
+      gap: 40px;
+      background-color: #f5f5dc
+    }
+
+    .bake-text {
+      flex: 1;
+      min-width: 300px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      font-family: cursive;
+      font-style: italic;
+    }
+
+    .bake-img {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .bake-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .bake-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .bake-img, .bake-text {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Heading with separate background -->
+  <div class="section-heading-container">
+    <h2 class="section-heading">Whisking Magic and Memories</h2>
+  </div>
+
+  <!-- Section 1: Image Left, Text Right -->
+  <div class="bake-section">
+    <div class="bake-img">
+      <img src="images/cake1.jpeg" alt="Baking Image 1">
+    </div>
+    <div class="bake-text">
+      <p>
+        Baking and cooking are my favorite forms of self-expression — a space where I mix joy, curiosity, and creativity into something truly delicious. I love baking cakes — from light, airy sponges to rich layered treats — each one feels like a little celebration. In the kitchen, I enjoy exploring a blend of cultures and flavors. Whether I’m twirling up creamy Italian pasta, stir-frying something spicy and Chinese, or simmering soulful Indian dishes, I find so much joy in creating food that brings people together.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 2: Text Left, Image Right -->
+  <div class="bake-section">
+    <div class="bake-text">
+      <p>
+        Cooking, for me, is not just about the final dish — it’s about the process. It teaches me patience, attention to detail, and how to stay calm even when things get messy (burnt edges and all!). I learn, I play, I make mistakes, and I keep stirring forward. Every recipe is a new chance to grow — to care, to create comfort, and to turn ordinary moments into something warm and meaningful, one plate (or cake!) at a time.<br>
+
+        In your kitchen, don’t just make food. Make comfort, connection, and little pieces of love you can taste…..
+      </p>
+    </div>
+    <div class="bake-img">
+      <img src="images/cake 2.jpg" alt="Baking Image 2">
+    </div>
+  </div>
+
+</body>
+</html>

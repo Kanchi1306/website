@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dancing Journey</title>
+   <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .section-heading-container {
+      background-color: #f2d9cf; /* Light pink */
+      padding: 50px 20px 30px;
+      text-align: center;
+    }
+
+    .section-heading {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: black;
+      font-family: 'Dancing Script', cursive;
+      margin: 0;
+    }
+
+    .dance-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 30px 10%;
+      gap: 40px;
+      background-color: #f5f5dc
+    }
+
+    .dance-text {
+      flex: 1;
+      min-width: 300px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      font-family: cursive;
+      font-style: italic;
+    }
+
+    .dance-img {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .dance-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .dance-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .dance-img, .dance-text {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Heading with separate background -->
+  <div class="section-heading-container">
+    <h2 class="section-heading">Dancing - My Boldest Expression</h2>
+  </div>
+
+  <!-- Section 1: Image Left, Text Right -->
+  <div class="dance-section">
+    <div class="dance-img">
+      <img src="images/normal.jpeg" alt="Dancing Image 1">
+    </div>
+    <div class="dance-text">
+      <p>
+        Let your soul dance, before your feet does.<br><br>
+        Some people walk through life — I dance through it. ✨  
+        Dance has been my language of emotion, my spark of joy, and my creative playground. 
+        From contemporary’s grace to hip hop’s grit, from freestyle’s freedom to the fire of Bhangra — 
+        I pour my soul into every rhythm. I’ve shared wins at IIM Kashipur, celebrated moments with my closest friends, 
+        and found a little more of myself in every performance. For me, dance isn’t just a hobby — 
+        it’s a way of living out loud, with heart.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 2: Text Left, Image Right -->
+  <div class="dance-section">
+    <div class="dance-text">
+      <p>
+        But behind the spotlight are moments of doubt, pressure, and vulnerability. 
+        I stumble, feel unseen, and face fears — yet every challenge becomes a step in my story. 
+        I turn stage fright into power, insecurity into expression, and weakness into strength. 
+        Dance teaches me more than steps — it teaches me to lead with empathy, manage a team, and create harmony with others. 
+        Through every expression, I tell my truth — growing stronger, more grounded, and more me with every beat.
+      </p>
+    </div>
+    <div class="dance-img">
+      <img src="images/group costume.jpeg" alt="Dancing Image 2">
+    </div>
+  </div>
+
+</body>
+</html>
