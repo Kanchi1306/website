@@ -45,7 +45,7 @@ body {
 
 .top-section p {
   font-size: 1.8rem;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script',sans-serif;
   color: black;
   margin-top: 0.4rem;
 }
@@ -94,7 +94,7 @@ body {
   margin-top: 1rem;
   font-size: 1.3rem;
   line-height: 1.9;
-  font-family:'Dancing Script';
+  font-family:'Dancing Script', sans-serif;
   font-style:oblique;
 }
 
