@@ -155,6 +155,35 @@ So, in your 20’s don’t chase the timeline, chase what sets your soul on fire
       <img src="images/blog11.jpg" alt="Blog1 Image 2">
     </div>
   </div>
+  <!-- Comment Section -->
+<div style="background-color: #f5f5dc; padding: 40px 20px; text-align: center;">
+  <h2 style="
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;">
+    Share your thoughts 💬
+  </h2>
+
+  <div id="disqus_thread" style="max-width: 800px; margin: 0 auto; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
+  </div>
+
+  <script>
+    var disqus_config = function () {
+      this.page.url = window.location.href;
+      this.page.identifier = window.location.pathname;
+    };
+
+    (function () {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://kanchispace.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the comments.</noscript>
+</div>
+
 
 </body>
 </html>
