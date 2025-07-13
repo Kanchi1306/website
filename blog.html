@@ -265,39 +265,34 @@
           />
           <input type="hidden" name="_captcha" value="false" />
           <button type="submit">Subscribe</button>
-          <label style="display: block; margin-top: 1rem; font-size: 0.9rem">
-            <input
-              type="checkbox"
-              id="dontShowAgain"
-              style="margin-right: 6px"
-            />
-            Don’t show this again
-          </label>
         </form>
+        <label style="display: block; margin-top: 1rem; font-size: 0.9rem">
+          <input type="checkbox" id="dontShowAgain" style="margin-right: 6px" />
+          Don’t show this again
+        </label>
       </div>
     </div>
     <script>
-  function closeModal() {
-    const popup = document.getElementById("subscriptionModal");
-    if (popup) popup.style.display = "none";
+      function closeModal() {
+        const popup = document.getElementById("subscriptionModal");
+        if (popup) popup.style.display = "none";
 
-    // Check if "Don't show again" is ticked
-    const dontShow = document.getElementById("dontShowAgain");
-    if (dontShow && dontShow.checked) {
-      localStorage.setItem("subscribed", "true");
-    }
-  }
+        // Check if "Don't show again" is ticked
+        const dontShow = document.getElementById("dontShowAgain");
+        if (dontShow && dontShow.checked) {
+          localStorage.setItem("subscribed", "true");
+        }
+      }
 
-  window.addEventListener("DOMContentLoaded", function () {
-    const hasSubscribed = localStorage.getItem("subscribed");
+      window.addEventListener("DOMContentLoaded", function () {
+        const hasSubscribed = localStorage.getItem("subscribed");
 
-    // Show popup only if user hasn't subscribed or opted out
-    if (!hasSubscribed) {
-      const popup = document.getElementById("subscriptionModal");
-      if (popup) popup.style.display = "flex";
-    }
-  });
-</script>
-
+        // Show popup only if user hasn't subscribed or opted out
+        if (!hasSubscribed) {
+          const popup = document.getElementById("subscriptionModal");
+          if (popup) popup.style.display = "flex";
+        }
+      });
+    </script>
   </body>
 </html>
