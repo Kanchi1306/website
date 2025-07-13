@@ -224,11 +224,10 @@
         </div>
         <!-- Blog Card -->
         <div class="blog-card">
-          <img
-            src="images/blog22.jpg"
-            alt="Unwritten Plns, Unspoken Joys"
-          />
-          <div class="blog-title">Unwritten Plans, Unspoken Joys- A "Want To" List</div>
+          <img src="images/blog22.jpg" alt="Unwritten Plns, Unspoken Joys" />
+          <div class="blog-title">
+            Unwritten Plans, Unspoken Joys- A "Want To" List
+          </div>
           <a href="blog2.html" target="_blank" class="blog-link">Read More</a>
         </div>
 
@@ -266,24 +265,39 @@
           />
           <input type="hidden" name="_captcha" value="false" />
           <button type="submit">Subscribe</button>
+          <label style="display: block; margin-top: 1rem; font-size: 0.9rem">
+            <input
+              type="checkbox"
+              id="dontShowAgain"
+              style="margin-right: 6px"
+            />
+            Don’t show this again
+          </label>
         </form>
       </div>
     </div>
     <script>
-      function closeModal() {
-        const popup = document.getElementById("subscriptionModal");
-        if (popup) popup.style.display = "none";
-      }
+  function closeModal() {
+    const popup = document.getElementById("subscriptionModal");
+    if (popup) popup.style.display = "none";
 
-      window.addEventListener("DOMContentLoaded", function () {
-        const hasSubscribed = localStorage.getItem("subscribed");
+    // Check if "Don't show again" is ticked
+    const dontShow = document.getElementById("dontShowAgain");
+    if (dontShow && dontShow.checked) {
+      localStorage.setItem("subscribed", "true");
+    }
+  }
 
-        // Show popup only if user hasn't subscribed
-        if (!hasSubscribed) {
-          const popup = document.getElementById("subscriptionModal");
-          if (popup) popup.style.display = "flex";
-        }
-      });
-    </script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const hasSubscribed = localStorage.getItem("subscribed");
+
+    // Show popup only if user hasn't subscribed or opted out
+    if (!hasSubscribed) {
+      const popup = document.getElementById("subscriptionModal");
+      if (popup) popup.style.display = "flex";
+    }
+  });
+</script>
+
   </body>
 </html>
