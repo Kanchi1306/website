@@ -248,11 +248,15 @@
   }
 
   window.addEventListener("DOMContentLoaded", function () {
-    const popup = document.getElementById("subscriptionModal");
-    if (popup) popup.style.display = "flex";
+    const hasSubscribed = localStorage.getItem("subscribed");
+
+    // Show popup only if user hasn't subscribed
+    if (!hasSubscribed) {
+      const popup = document.getElementById("subscriptionModal");
+      if (popup) popup.style.display = "flex";
+    }
   });
 </script>
-
 
 
   </body>
