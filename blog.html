@@ -13,7 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    
+
     <style>
       body {
         font-family: "Poppins", sans-serif;
@@ -108,95 +108,99 @@
         }
       }
       /* Popup Overlay */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-}
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+      }
 
-/* Popup Box */
-.modal-box {
-  background-color: #ffe6ee;
-  padding: 2rem;
-  border-radius: 20px;
-  text-align: center;
-  max-width: 400px;
-  width: 90%;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  position: relative;
-  animation: fadeIn 0.3s ease;
-}
+      /* Popup Box */
+      .modal-box {
+        background-color: #ffe6ee;
+        padding: 2rem;
+        border-radius: 20px;
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        position: relative;
+        animation: fadeIn 0.3s ease;
+      }
 
-/* Heading and Text */
-.modal-box h3 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 1.8rem;
-  color: palevioletred;
-  margin-bottom: 0.3rem;
-}
+      /* Heading and Text */
+      .modal-box h3 {
+        font-family: "Dancing Script", cursive;
+        font-size: 1.8rem;
+        color: palevioletred;
+        margin-bottom: 0.3rem;
+      }
 
-.modal-box p {
-  font-size: 0.95rem;
-  color: #444;
-  margin-bottom: 1.2rem;
-}
+      .modal-box p {
+        font-size: 0.95rem;
+        color: #444;
+        margin-bottom: 1.2rem;
+      }
 
-/* Input Fields */
-.modal-box input {
-  padding: 0.6rem 1rem;
-  width: 100%;
-  max-width: 300px;
-  border-radius: 25px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-  box-sizing: border-box;
-  outline: none;
-  margin-bottom: 0.8rem;
-}
+      /* Input Fields */
+      .modal-box input {
+        padding: 0.6rem 1rem;
+        width: 100%;
+        max-width: 300px;
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        box-sizing: border-box;
+        outline: none;
+        margin-bottom: 0.8rem;
+      }
 
-/* Subscribe Button */
-.modal-box button[type="submit"] {
-  background-color: palevioletred;
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 25px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
+      /* Subscribe Button */
+      .modal-box button[type="submit"] {
+        background-color: palevioletred;
+        color: white;
+        padding: 0.6rem 1.2rem;
+        border: none;
+        border-radius: 25px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
 
-.modal-box button[type="submit"]:hover {
-  background-color: #d94a7a;
-}
+      .modal-box button[type="submit"]:hover {
+        background-color: #d94a7a;
+      }
 
-/* Close Button */
-.close-btn {
-  position: absolute;
-  top: 12px;
-  right: 18px;
-  background: none;
-  border: none;
-  font-size: 1.4rem;
-  cursor: pointer;
-  color: #777;
-}
+      /* Close Button */
+      .close-btn {
+        position: absolute;
+        top: 12px;
+        right: 18px;
+        background: none;
+        border: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        color: #777;
+      }
 
-/* Animation */
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
-}
-
+      /* Animation */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
     </style>
-
   </head>
   <body>
     <div class="section-heading-container">
@@ -218,47 +222,68 @@
           </div>
           <a href="blog1.html" target="_blank" class="blog-link">Read More</a>
         </div>
+        <!-- Blog Card -->
+        <div class="blog-card">
+          <img
+            src="images/blog22.jpg"
+            alt="Unwritten Plns, Unspoken Joys"
+          />
+          <div class="blog-title">Unwritten Plans, Unspoken Joys- A "Want To" List</div>
+          <a href="blog2.html" target="_blank" class="blog-link">Read More</a>
+        </div>
 
         <!-- Add more .blog-card blocks here in the future -->
       </div>
     </div>
     <!-- SUBSCRIPTION POPUP -->
-<!-- Subscription Popup -->
-<div id="subscriptionModal" class="modal-overlay">
-  <div class="modal-box">
-    <button class="close-btn" onclick="closeModal()">×</button>
-    <h3>Subscribe to <span style="font-weight: 600;">Kanchispace</span> 💌</h3>
-    <p>Get notified when new blogs drop — no spam, just heart.</p>
+    <!-- Subscription Popup -->
+    <div id="subscriptionModal" class="modal-overlay">
+      <div class="modal-box">
+        <button class="close-btn" onclick="closeModal()">×</button>
+        <h3>
+          Subscribe to <span style="font-weight: 600">Kanchispace</span> 💌
+        </h3>
+        <p>Get notified when new blogs drop — no spam, just heart.</p>
 
-    <form action="https://usebasin.com/f/ff2cfdca38c5" method="POST">
-  <input type="text" name="name" placeholder="Your full name" required />
-  <input type="email" name="email" placeholder="Your email address" required />
-  <input type="hidden" name="_redirect" value="https://kanchi1306.github.io/website/thankyou.html
-" />
-  <input type="hidden" name="_captcha" value="false" />
-  <button type="submit">Subscribe</button>
-</form>
+        <form action="https://usebasin.com/f/ff2cfdca38c5" method="POST">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your full name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email address"
+            required
+          />
+          <input
+            type="hidden"
+            name="_redirect"
+            value="https://kanchi1306.github.io/website/thankyou.html
+"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      function closeModal() {
+        const popup = document.getElementById("subscriptionModal");
+        if (popup) popup.style.display = "none";
+      }
 
-  </div>
-</div>
-<script>
-  function closeModal() {
-    const popup = document.getElementById("subscriptionModal");
-    if (popup) popup.style.display = "none";
-  }
+      window.addEventListener("DOMContentLoaded", function () {
+        const hasSubscribed = localStorage.getItem("subscribed");
 
-  window.addEventListener("DOMContentLoaded", function () {
-    const hasSubscribed = localStorage.getItem("subscribed");
-
-    // Show popup only if user hasn't subscribed
-    if (!hasSubscribed) {
-      const popup = document.getElementById("subscriptionModal");
-      if (popup) popup.style.display = "flex";
-    }
-  });
-</script>
-
-
+        // Show popup only if user hasn't subscribed
+        if (!hasSubscribed) {
+          const popup = document.getElementById("subscriptionModal");
+          if (popup) popup.style.display = "flex";
+        }
+      });
+    </script>
   </body>
-
 </html>
