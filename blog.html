@@ -272,27 +272,28 @@
         </label>
       </div>
     </div>
-    <script>
-      function closeModal() {
-        const popup = document.getElementById("subscriptionModal");
-        if (popup) popup.style.display = "none";
+   <script>
+  function closeModal() {
+    const dontShow = document.getElementById("dontShowAgain");
+    if (dontShow && dontShow.checked) {
+      // Save preference BEFORE hiding popup
+      localStorage.setItem("subscribed", "true");
+    }
 
-        // Check if "Don't show again" is ticked
-        const dontShow = document.getElementById("dontShowAgain");
-        if (dontShow && dontShow.checked) {
-          localStorage.setItem("subscribed", "true");
-        }
-      }
+    const popup = document.getElementById("subscriptionModal");
+    if (popup) popup.style.display = "none";
+  }
 
-      window.addEventListener("DOMContentLoaded", function () {
-        const hasSubscribed = localStorage.getItem("subscribed");
+  window.addEventListener("DOMContentLoaded", function () {
+    const hasSubscribed = localStorage.getItem("subscribed");
 
-        // Show popup only if user hasn't subscribed or opted out
-        if (!hasSubscribed) {
-          const popup = document.getElementById("subscriptionModal");
-          if (popup) popup.style.display = "flex";
-        }
-      });
-    </script>
+    // Only show popup if not already subscribed
+    if (!hasSubscribed) {
+      const popup = document.getElementById("subscriptionModal");
+      if (popup) popup.style.display = "flex";
+    }
+  });
+</script>
+
   </body>
 </html>
